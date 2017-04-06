@@ -11,6 +11,8 @@ package adventuregame;
  */
 public interface IRoom {
     
+   void roomName();
+   void roomDescription();
    void northSide();
    void eastSide();
    void southSide();
