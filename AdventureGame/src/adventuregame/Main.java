@@ -8,6 +8,8 @@ package adventuregame;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//TEST 4/6/2017 1:15
+
 /**
  *
  * @author Arne
@@ -27,7 +29,7 @@ public class Main {
         
         int condition1 = 0;
         
-        do{
+        while(condition1 == 0) {
         System.out.println("You find yourself in the First Room");
         System.out.println(FirstRoom.getDescription());
         System.out.println("Choose a menu item: ");
@@ -81,7 +83,7 @@ public class Main {
                     break;
         }   break;
       
-    } while (condition1 == 0);
+    }
     System.out.println("You have escaped the First Room");
     
 }
