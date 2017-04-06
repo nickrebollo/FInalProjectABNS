@@ -15,6 +15,18 @@ public class basicRoom implements IRoom {
    private String RoomTitle;
    private String RoomDescription;
 
+    public String getRoomTitle() 
+    {return RoomTitle;}
+
+    public void setRoomTitle(String RoomTitle) 
+    {this.RoomTitle = RoomTitle;}
+
+    public String getRoomDescription() 
+    {return RoomDescription;}
+
+    public void setRoomDescription(String RoomDescription) 
+    {this.RoomDescription = RoomDescription;}
+
     @Override
     public void northSide() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
