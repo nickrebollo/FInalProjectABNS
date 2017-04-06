@@ -29,7 +29,7 @@ public class Main {
         
         int condition1 = 0;
         
-        while(condition1 == 0) {
+        while(condition1 != 1) {
         System.out.println("You find yourself in the First Room");
         System.out.println(FirstRoom.getDescription());
         System.out.println("Choose a menu item: ");
@@ -38,7 +38,7 @@ public class Main {
         System.out.println("3: Open shoebox");
         
         Scanner in = new Scanner(System.in);
-        int menuItem = in.nextInt();
+        int menuItem = Integer.parseInt(in.nextLine());
         switch(menuItem) {
             case 1:
                 if(inventory.contains("First Room Key")){
@@ -64,8 +64,8 @@ public class Main {
                 System.out.println("2: Take pencil");
                 System.out.println("3: Back to room options");
                   
-                    int menuItemShoebox1 = in.nextInt();
-                    switch(menuItem) {
+                    int menuItemShoebox1 = Integer.parseInt(in.nextLine());
+                    switch(menuItemShoebox1) {
                         case 1:
                             System.out.println("You have added the key to your inventory");
                             inventory.add("First Room Key");
@@ -80,8 +80,8 @@ public class Main {
                         case 3:
                             break;
                     }
-                    break;
-        }   break;
+            break;        
+        }
       
     }
     System.out.println("You have escaped the First Room");
