@@ -11,22 +11,23 @@ package adventuregame;
  */
 public class basicRoom implements IRoom {
     
-   //Sets up the variables for room names, descriptions and exits
-   private String RoomTitle;
-   private String RoomDescription;
+    //Sets the room description and title for the rooms
+    private String roomDescription = " ";
+    private String roomTitle = " ";
+
+    //Getters and Setters for the Description and Title
+    public String getRoomDescription() 
+    {return roomDescription;}
+
+    public void setRoomDescription(String roomDescription)
+    {this.roomDescription = roomDescription;}
 
     public String getRoomTitle() 
-    {return RoomTitle;}
+    {return roomTitle;}
 
-    public void setRoomTitle(String RoomTitle) 
-    {this.RoomTitle = RoomTitle;}
-
-    public String getRoomDescription() 
-    {return RoomDescription;}
-
-    public void setRoomDescription(String RoomDescription) 
-    {this.RoomDescription = RoomDescription;}
-
+    public void setRoomTitle(String roomTitle) 
+    {this.roomTitle = roomTitle;}
+    
     @Override
     public void northSide() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -51,6 +52,4 @@ public class basicRoom implements IRoom {
     public void exit() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    
 }
