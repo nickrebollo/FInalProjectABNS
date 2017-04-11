@@ -36,6 +36,7 @@ public class Main {
         System.out.println("1: Open Door");
         System.out.println("2: Look in cupboard");
         System.out.println("3: Open shoebox");
+        System.out.println("4: View inventory");
         
         Scanner in = new Scanner(System.in);
         int menuItem = Integer.parseInt(in.nextLine());
@@ -80,7 +81,11 @@ public class Main {
                         case 3:
                             break;
                     }
-            break;        
+            break;
+            
+            case 4:
+                Inventory.getList(inventory);
+            break;    
         }
       
     }
