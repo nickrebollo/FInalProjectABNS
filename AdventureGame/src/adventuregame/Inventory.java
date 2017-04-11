@@ -15,7 +15,8 @@ public class Inventory {
     
     ArrayList<String> inventory = new ArrayList<String>();
     
-    public ArrayList<String> getList() {
-       return inventory;
+    public static ArrayList<String> getList(ArrayList list) {
+       System.out.println(list);
+       return list;
 }
 }
