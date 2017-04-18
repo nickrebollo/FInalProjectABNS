@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
- * @author Arne
+ * @authors Arne, Sam, Nick, Brett
  */
 public class Main {
 
