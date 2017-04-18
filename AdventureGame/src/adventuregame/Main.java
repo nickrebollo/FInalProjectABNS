@@ -7,9 +7,6 @@ package adventuregame;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-//TEST 4/6/2017 1:15
-
 /**
  *
  * @author Arne
