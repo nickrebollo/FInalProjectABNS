@@ -18,7 +18,7 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        Room FirstRoom = new Room("First Room", "In this room, there is a broken cupboard hanging off the wall, an old shoebox in the corner, and a door on the left wall. Try to get out");
+        basicRoom FirstRoom = new basicRoom("First Room", "In this room, there is a broken cupboard hanging off the wall, an old shoebox in the corner, and a door on the left wall. Try to get out");
         Room SecondRoom = new Room("Second Room", "This is the description of the first room. Try to get out");
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
         
@@ -28,7 +28,7 @@ public class Main {
         
         while(condition1 != 1) {
         System.out.println("You find yourself in the First Room");
-        System.out.println(FirstRoom.getDescription());
+        System.out.println(FirstRoom.getRoomDescription());
         System.out.println("Choose a menu item: ");
         System.out.println("1: Open Door");
         System.out.println("2: Look in cupboard");
