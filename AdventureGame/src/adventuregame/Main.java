@@ -84,7 +84,12 @@ public class Main {
             break;
             
             case 4:
-                Inventory.getList(inventory);
+                if(inventory.size() > 0){
+                    Inventory.getList(inventory);    
+                }
+                else{
+                    System.out.println("There is nothing in your inventory");
+                }
             break;    
         }
       
