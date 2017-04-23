@@ -11,11 +11,13 @@ package adventuregame;
  */
 public interface IRoom {
     
-   void northSide();
-   void eastSide();
-   void southSide();
-   void westSide();
-   void exit();
+   public String getRoomDescription();
+
+    public void setRoomDescription(String roomDescription);
+
+    public String getRoomTitle();
+
+    public void setRoomTitle(String roomTitle);
    
    
    
