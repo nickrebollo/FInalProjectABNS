@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) {
         
         basicRoom FirstRoom = new basicRoom("First Room", "In this room, there is a broken cupboard hanging off the wall, an old shoebox in the corner, and a door on the left wall. Try to get out");
-        Hallway Hallway = new Hallway("Hallway", "You exit the room to find yourself in a long hallway. To your right is a storage closet, ");
+        //Hallway Hallway = new Hallway("Hallway", "You exit the room to find yourself in a long hallway. To your right is a storage closet, ");
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
         
         //Initialize arraylist for Inventory
