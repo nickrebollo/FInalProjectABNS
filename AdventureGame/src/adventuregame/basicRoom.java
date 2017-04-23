@@ -14,7 +14,15 @@ public class basicRoom implements IRoom {
     //Sets the room description and title for the rooms
     private String roomDescription = " ";
     private String roomTitle = " ";
-
+    
+    //Empty Contructor
+    public basicRoom(){}
+    
+    //Constructor with Parameters
+    public basicRoom(String roomDescription, String roomTitle){
+        setRoomDescription(roomDescription);
+        setRoomTitle(roomTitle);
+    }
     //Getters and Setters for the Description and Title
     public String getRoomDescription() 
     {return roomDescription;}
@@ -27,14 +35,5 @@ public class basicRoom implements IRoom {
 
     public void setRoomTitle(String roomTitle) 
     {this.roomTitle = roomTitle;}
-    
-    //Empty Contructor
-    public basicRoom(){}
-    
-    //Constructor with Parameters
-    public basicRoom(String roomDescription, String roomTitle){
-        setRoomDescription(roomDescription);
-        setRoomTitle(roomTitle);
-    }
     
 }
