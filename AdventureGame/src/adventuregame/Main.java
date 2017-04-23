@@ -23,8 +23,12 @@ public class Main {
         Hallway Hallway = new Hallway("Hallway", "You exit the room to find yourself in a long hallway. To your right is a storage closet, ");
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
         
+        //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
         
+        //Run Program
+        
+        //First Room
         int condition1 = 0;
         
         while(condition1 != 1) {
