@@ -12,8 +12,8 @@ package adventuregame;
 public class Hallway implements IRoom{
     
     //Sets the room description and title for the rooms
-    private String roomDescription = " ";
-    private String roomTitle = " ";
+    private String roomDescription;
+    private String roomTitle;
     
     //Empty Contructor
     public Hallway(){}
