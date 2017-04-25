@@ -22,6 +22,8 @@ public class Main {
         basicRoom FirstRoom = new basicRoom("First Room", "In this room, there is a broken cupboard hanging off the wall, an old shoebox in the corner, and a door on the left wall. Try to get out");
         Hallway Hallway = new Hallway("Hallway", "You exit the room to find yourself in a long hallway. To your right is a storage closet, ");
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
+        Pharmacy Pharmacy = new Pharmacy("Pharmacy", "You enter a dimily lit room. The barred windows let in streams of light. " + 
+                                        " There are medicine cabinets everywhere, but your mind is focused on leaving instead of gathering materials.");
         
         ArrayList<String> inventory = new ArrayList<>();
         
