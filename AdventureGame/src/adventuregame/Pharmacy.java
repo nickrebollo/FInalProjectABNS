@@ -9,6 +9,11 @@ public class Pharmacy implements IRoom {
     private String roomDescription;
     private String roomTitle;
     
+    public Pharmacy(String roomDescription, String roomTitle){
+        setRoomDescription(roomDescription);
+        setRoomTitle(roomTitle);
+    }
+    
     @Override
     public String getRoomDescription() 
     { return roomDescription; }
