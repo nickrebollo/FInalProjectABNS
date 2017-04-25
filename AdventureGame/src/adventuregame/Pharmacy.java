@@ -6,24 +6,23 @@ package adventuregame;
  */
 public class Pharmacy implements IRoom {
 
+    private String roomDescription;
+    private String roomTitle;
+    
     @Override
-    public String getRoomDescription() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String getRoomDescription() 
+    { return roomDescription; }
 
     @Override
-    public void setRoomDescription(String roomDescription) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void setRoomDescription(String roomDescription)
+    { this.roomDescription = roomDescription; }
 
     @Override
-    public String getRoomTitle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String getRoomTitle() 
+    { return roomTitle; }
 
     @Override
-    public void setRoomTitle(String roomTitle) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void setRoomTitle(String roomTitle) 
+    { this.roomTitle = roomTitle; }
     
 }
