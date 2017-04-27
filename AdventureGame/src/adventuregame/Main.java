@@ -31,6 +31,9 @@ public class Main {
         //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
         
+        //Initialize Scanner
+        Scanner in = new Scanner(System.in);
+        
         //Run Program
         
         //First Room
@@ -46,7 +49,6 @@ public class Main {
         System.out.println("3: Open shoebox");
         System.out.println("4: View inventory");
         
-        Scanner in = new Scanner(System.in);
         int menuItem = Integer.parseInt(in.nextLine());
         switch(menuItem) {
             case 1:
@@ -104,5 +106,113 @@ public class Main {
     }
     System.out.println("You have escaped the First Room");
     
-}
-}
+    //First Hallway
+    int condition2 = 0;
+    int hallwayCondition = 0;
+        
+    if(hallwayCondition == 0){
+        while(condition1 != 1) {
+        System.out.println("You find yourself in a hallway");
+        System.out.println(Hallway.getRoomDescription());
+        System.out.println(Hallway.getRoomTitle());
+        System.out.println("Choose a menu item: ");
+        System.out.println("1: Open Storage Closet");
+        System.out.println("2: Search Custodial Cart");
+        System.out.println("3: Continue down hallway");
+        System.out.println("4: View inventory");
+        
+        
+        int menuItem = Integer.parseInt(in.nextLine());
+        switch(menuItem) {
+            case 1:
+                System.out.println("The storage closet, except for some garbage on the ground.");
+                System.out.println("1: Pick up garbage");
+                System.out.println("Go back to hallway");
+                    int menuItemStorageCloset = Integer.parseInt(in.nextLine());
+                    switch(menuItemStorageCloset){
+                        case 1:
+                            System.out.println("You pick up the garbage, and find a piece of paper with a 6 digit code written on a crumpled piece of paper. You add it to your inventory");
+                            inventory.add("Paper with code(424262)");
+                            break;
+                        case 2:
+                            break;
+                    }
+                break;
+            
+                
+            case 2:
+                System.out.println("The cart contains a bunch of dirty rags");
+                System.out.println("1: Take dirty rags");
+                System.out.println("2: Go back to hallway");
+                    int menuItemCart = Integer.parseInt(in.nextLine());
+                    switch(menuItemCart){
+                        case 1:
+                            inventory.add("Dirty rags");
+                            System.out.println("You added the dirty rags to your inventory, for some reason");
+                break;
+                
+           
+            case 3:
+                hallwayCondition = 1;
+                break;
+                    
+            case 4:
+                if(inventory.size() > 0){
+                    Inventory.getList(inventory);    
+                }
+                else{
+                    System.out.println("There is nothing in your inventory");
+                }
+                break;
+        }
+        }
+        }
+        
+        else{
+            System.out.println("You continue further down the hallway.  You see a door with a keypad entry, a trashcan, and a large slab of concrete on the ground");
+                System.out.println("Choose a menu item: ");
+                System.out.println("1: Open Door");
+                System.out.println("2: Search trashcan");
+                System.out.println("3: Take concrete");
+                System.out.println("4: Go back the way you came");
+                System.out.println("5: View Inventory");
+                  
+                    int menuItemDownHallway = Integer.parseInt(in.nextLine());
+                    switch(menuItemDownHallway) {
+                        case 1:
+                            if(inventory.contains("Paper with code(424262)")){
+                            System.out.println("The door has opened");
+                            condition2 = 1;
+                    
+                            }
+                            else{
+                            System.out.println("The door is locked, it appears to require a secret code");
+                            }
+                            break;   
+                        case 2:
+                            System.out.println("The trashcan is empty");
+                            break;
+                        case 3:
+                            inventory.add("Slab of concrete");
+                            System.out.println("You added the slab of concrete to your inventory");
+                            break;
+                        case 4:
+                            hallwayCondition = 0;
+                            break;
+                        case 5:
+                            if(inventory.size() > 0){
+                            Inventory.getList(inventory);    
+                            }
+                            else{
+                            System.out.println("There is nothing in your inventory");
+                            }
+                            break;
+                            }
+        }
+    }
+        
+    }
+                
+        }
+    
+
