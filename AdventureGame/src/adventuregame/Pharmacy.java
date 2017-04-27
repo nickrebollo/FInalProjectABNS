@@ -9,7 +9,7 @@ public class Pharmacy implements IRoom {
     private String roomDescription;
     private String roomTitle;
     
-    public Pharmacy(String roomDescription, String roomTitle){
+    public Pharmacy(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
