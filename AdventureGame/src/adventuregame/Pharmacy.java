@@ -30,4 +30,18 @@ public class Pharmacy implements IRoom {
     public void setRoomTitle(String roomTitle) 
     { this.roomTitle = roomTitle; }
     
+    //Search function 
+    public void cabinets() {
+        String word = "Supplies";
+        String text1 = "Receipt Paper";
+        String text2 = "Trash Bags";
+        String text3 = "Employee Supplies";
+        Boolean found;
+        
+        if (text1.contains(word)){
+            
+        }
+        
+    }
+    
 }
