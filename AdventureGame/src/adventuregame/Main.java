@@ -23,6 +23,10 @@ public class Main {
         Hallway Hallway = new Hallway("Hallway", "You exit the room to find yourself in a long hallway. To your right is a storage closet, a dirty custodial cart in front of you, and a dark hallway to your left.");
         
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
+        Pharmacy Pharmacy = new Pharmacy("Pharmacy", "You enter a dimily lit room. The barred windows let in streams of light. " + 
+                " There are medicine cabinets everywhere, but your mind is focused on leaving instead of gathering materials.");
+        operatingRoom ORoom = new operatingRoom ("Operating Room", "As soon as you enter, there's a putrid smell of "+
+                "blood and the area looks ransacked.");
         
         //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
