@@ -96,8 +96,68 @@ public class Main {
     }
     System.out.println("You have escaped the First Room");
     
+    int condition2 = 0;
+    
+    while(condition2 != 1){
     System.out.println("You enter the " + Pharmacy.getRoomTitle());
     System.out.println(Pharmacy.getRoomDescription());
+    System.out.println("1: Scream for help");
+    System.out.println("2: Look through the cabinets");
+    System.out.println("3: Examine the door");
+    System.out.println("4: View Inventory");
     
+    Scanner in = new Scanner(System.in);
+    int menuItem = Integer.parseInt(in.nextLine());
+    switch (menuItem){
+        case 1: 
+            System.out.println("You hear your echo... then silence...");
+            break;
+            
+        case 2:
+            System.out.println("There are three cabinets nearby. WHich one do you open?");
+            System.out.println("1: Trash");
+            System.out.println("2: Reciepts");
+            System.out.println("3: Supplies");            
+            int menuItemCabinets = Integer.parseInt(in.nextLine());
+                    switch(menuItemCabinets) {
+                        case 1: 
+                            System.out.println("An employee threw away what seems to be a key card.");
+                            System.out.println("You keep the card.");
+                            inventory.add("Key Card");
+                            break;
+                            
+                        case 2:
+                            System.out.println("Just as you suspected. Reciepts.");
+                            break;
+                            
+                        case 3:
+                            System.out.println("Mops and brooms. Not much else.");
+                            break;
+                    }
+                    break;
+                    
+        case 3:
+            if (inventory.contains("Key Card")){
+                System.out.println("You wave the card you picked up at the door. It opens.");
+                condition2 = 1;
+            }else{
+                System.out.println("There's a handle but the door won't budge.");
+                System.out.println("Maybe there's a key somewhere...");
+            }
+            break;
+            
+        case 4:
+                if(inventory.size() > 0){
+                    Inventory.getList(inventory);    
+                }
+                else{
+                    System.out.println("There is nothing in your inventory");
+                }
+            break;    
+    }
+    }
+    System.out.println("You leave the Pharmacy.");
+    
+
 }
 }
