@@ -19,7 +19,7 @@ public class basicRoom implements IRoom {
     public basicRoom(){}
     
     //Constructor with Parameters
-    public basicRoom(String roomDescription, String roomTitle){
+    public basicRoom(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }

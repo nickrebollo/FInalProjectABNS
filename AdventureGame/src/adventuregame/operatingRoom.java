@@ -9,7 +9,7 @@ public class operatingRoom implements IRoom {
     private String roomDescription;
     private String roomTitle;
     
-    public operatingRoom (String roomDescription, String roomTitle){
+    public operatingRoom (String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }

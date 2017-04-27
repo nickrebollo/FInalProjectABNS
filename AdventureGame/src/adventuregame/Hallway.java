@@ -19,12 +19,13 @@ public class Hallway implements IRoom{
     public Hallway(){}
     
     //Constructor with Parameters
-    public Hallway(String roomDescription, String roomTitle){
+    public Hallway(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
     
     //Getters and Setters for the Description and Title
+<<<<<<< HEAD
     
     public String getRoomDescription() {
         
@@ -44,6 +45,23 @@ public class Hallway implements IRoom{
     public void setRoomTitle(String roomTitle) {
         
     }
+=======
+    @Override
+    public String getRoomDescription() 
+    { return roomDescription; }
+
+    @Override
+    public void setRoomDescription(String roomDescription) 
+    { this.roomDescription = roomDescription; }
+
+    @Override
+    public String getRoomTitle() 
+    { return roomTitle; }
+
+    @Override
+    public void setRoomTitle(String roomTitle) 
+    { this.roomTitle = roomTitle; }
+>>>>>>> origin/master
     
     //Methods
     public void Continue(Hallway h1){

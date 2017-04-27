@@ -9,7 +9,7 @@ public class Pharmacy implements IRoom {
     private String roomDescription;
     private String roomTitle;
     
-    public Pharmacy(String roomDescription, String roomTitle){
+    public Pharmacy(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
@@ -29,5 +29,19 @@ public class Pharmacy implements IRoom {
     @Override
     public void setRoomTitle(String roomTitle) 
     { this.roomTitle = roomTitle; }
+    
+    //Search function 
+    public void cabinets() {
+        String word = "Supplies";
+        String text1 = "Receipt Paper";
+        String text2 = "Trash Bags";
+        String text3 = "Employee Supplies";
+        Boolean found;
+        
+        if (text1.contains(word)){
+            
+        }
+        
+    }
     
 }
