@@ -19,31 +19,27 @@ public class Hallway implements IRoom{
     public Hallway(){}
     
     //Constructor with Parameters
-    public Hallway(String roomDescription, String roomTitle){
+    public Hallway(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
     
     //Getters and Setters for the Description and Title
     @Override
-    public String getRoomDescription() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String getRoomDescription() 
+    { return roomDescription; }
 
     @Override
-    public void setRoomDescription(String roomDescription) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void setRoomDescription(String roomDescription) 
+    { this.roomDescription = roomDescription; }
 
     @Override
-    public String getRoomTitle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public String getRoomTitle() 
+    { return roomTitle; }
 
     @Override
-    public void setRoomTitle(String roomTitle) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void setRoomTitle(String roomTitle) 
+    { this.roomTitle = roomTitle; }
     
     //Methods
     
