@@ -109,6 +109,7 @@ public class Main {
     System.out.println("You have escaped the First Room");
     
 //First Hallway
+
     int condition2 = 0;
     int hallwayCondition = 0;
         
@@ -139,7 +140,7 @@ public class Main {
                         case 2:
                             break;
                     }
-            
+                break;
                 
             case 2:
                 System.out.println("The cart contains a bunch of dirty rags");
@@ -155,7 +156,7 @@ public class Main {
                         case 2:
                             break;
                     }
-           
+                break;
             case 3:
                 hallwayCondition = 1;
                 break;
@@ -168,7 +169,7 @@ public class Main {
                     System.out.println("There is nothing in your inventory");
                 }
                 break;
-        }
+                }
         
         }
         
@@ -217,7 +218,11 @@ public class Main {
         }
     }
     }
+<<<<<<< HEAD
 //Pharmacy
+=======
+	//Pharmacy
+>>>>>>> origin/master
     int condition3 = 0;
     
     while(condition3 != 1){
@@ -277,7 +282,10 @@ public class Main {
             break;    
     }
     }
+<<<<<<< HEAD
     System.out.println("You leave the Pharmacy.");    
+=======
+    System.out.println("You leave the Pharmacy.");
+>>>>>>> origin/master
     }
 }
-    
