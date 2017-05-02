@@ -223,7 +223,7 @@ public class Main {
         }
     }
     }
-    int condition2 = 0;
+    int condition3 = 0;
     
     while(condition2 != 1){
     System.out.println("You enter the " + Pharmacy.getRoomTitle());
@@ -233,7 +233,6 @@ public class Main {
     System.out.println("3: Examine the door");
     System.out.println("4: View Inventory");
     
-    Scanner in = new Scanner(System.in);
     int menuItem = Integer.parseInt(in.nextLine());
     switch (menuItem){
         case 1: 
