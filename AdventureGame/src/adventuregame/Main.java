@@ -107,7 +107,9 @@ public class Main {
       
     }
     System.out.println("You have escaped the First Room");
-	//First Hallway
+    
+//First Hallway
+
     int condition2 = 0;
     int hallwayCondition = 0;
         
@@ -138,7 +140,7 @@ public class Main {
                         case 2:
                             break;
                     }
-            
+                break;
                 
             case 2:
                 System.out.println("The cart contains a bunch of dirty rags");
@@ -154,7 +156,7 @@ public class Main {
                         case 2:
                             break;
                     }
-           
+                break;
             case 3:
                 hallwayCondition = 1;
                 break;
@@ -167,7 +169,7 @@ public class Main {
                     System.out.println("There is nothing in your inventory");
                 }
                 break;
-        }
+                }
         
         }
         
@@ -219,7 +221,7 @@ public class Main {
 	//Pharmacy
     int condition3 = 0;
     
-    while(condition2 != 1){
+    while(condition3 != 1){
     System.out.println("You enter the " + Pharmacy.getRoomTitle());
     System.out.println(Pharmacy.getRoomDescription());
     System.out.println("1: Scream for help");
@@ -259,7 +261,7 @@ public class Main {
         case 3:
             if (inventory.contains("Key Card")){
                 System.out.println("You wave the card you picked up at the door. It opens.");
-                condition2 = 1;
+                condition3 = 1;
             }else{
                 System.out.println("There's a handle but the door won't budge.");
                 System.out.println("Maybe there's a key somewhere...");
