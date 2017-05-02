@@ -29,7 +29,9 @@ public class Main {
         
         //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
+        
         Stack lifo = new Stack();
+
         
         //Initialize Scanner
         Scanner in = new Scanner(System.in);
@@ -105,8 +107,7 @@ public class Main {
       
     }
     System.out.println("You have escaped the First Room");
-    
-//First Hallway
+	//First Hallway
     int condition2 = 0;
     int hallwayCondition = 0;
         
@@ -149,21 +150,13 @@ public class Main {
                         case 1:
                             inventory.add("Dirty rags");
                             System.out.println("You added the dirty rags to your inventory, for some reason");
-                break;
-                
-           
-            case 3:
-                hallwayCondition = 1;
-                break;
-                    
-            case 4:
                             break;
                         case 2:
                             break;
                     }
            
             case 3:
-                Hallway.Continue(hallwayCondition);
+                hallwayCondition = 1;
                 break;
                     
             case 4:
@@ -178,7 +171,7 @@ public class Main {
         
         }
         
-        if(hallwayCondition == 1){
+        if(hallwayCondition ==1){
             while(hallwayCondition == 1){
             System.out.println("You continue further down the hallway.  You see a door with a keypad entry, a trashcan, and a large slab of concrete on the ground");
                 System.out.println("Choose a menu item: ");
@@ -209,7 +202,7 @@ public class Main {
                             break;
                         case 4:
                             condition2 = 0;
-                            Hallway.goBack(hallwayCondition);
+                            hallwayCondition = 0;
                             break;
                         case 5:
                             if(inventory.size() > 0){
@@ -223,6 +216,7 @@ public class Main {
         }
     }
     }
+	//Pharmacy
     int condition3 = 0;
     
     while(condition2 != 1){
@@ -283,7 +277,5 @@ public class Main {
     }
     }
     System.out.println("You leave the Pharmacy.");
-
     }
 }
-    
