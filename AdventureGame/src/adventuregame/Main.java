@@ -218,11 +218,8 @@ public class Main {
         }
     }
     }
-<<<<<<< HEAD
-//Pharmacy
-=======
+
 	//Pharmacy
->>>>>>> origin/master
     int condition3 = 0;
     
     while(condition3 != 1){
@@ -282,10 +279,7 @@ public class Main {
             break;    
     }
     }
-<<<<<<< HEAD
+
     System.out.println("You leave the Pharmacy.");    
-=======
-    System.out.println("You leave the Pharmacy.");
->>>>>>> origin/master
     }
 }
