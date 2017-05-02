@@ -23,8 +23,8 @@ public class Main {
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
         Pharmacy Pharmacy = new Pharmacy("Pharmacy", "This room is dimily lit. The barred windows let in streams of light. " + 
                 " There are medicine cabinets everywhere you look.");
-        operatingRoom ORoom = new operatingRoom ("Operating Room", "As soon as you enter, there's a putrid smell of "+
-                "blood and the area looks ransacked.");
+        //operatingRoom ORoom = new operatingRoom ("Operating Room", "As soon as you enter, there's a putrid smell of "+
+                //"blood and the area looks ransacked.");
         
         //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
@@ -104,13 +104,12 @@ public class Main {
     }
     System.out.println("You have escaped the First Room");
     
-<<<<<<< HEAD
-    //First Hallway
+//First Hallway
     int condition2 = 0;
     int hallwayCondition = 0;
         
-    if(hallwayCondition == 0){
-        while(condition1 != 1) {
+    while(condition2 != 1){
+        while(hallwayCondition != 1){
         System.out.println("You find yourself in a hallway");
         System.out.println(Hallway.getRoomDescription());
         System.out.println(Hallway.getRoomTitle());
@@ -126,7 +125,7 @@ public class Main {
             case 1:
                 System.out.println("The storage closet, except for some garbage on the ground.");
                 System.out.println("1: Pick up garbage");
-                System.out.println("Go back to hallway");
+                System.out.println("2: Go back to hallway");
                     int menuItemStorageCloset = Integer.parseInt(in.nextLine());
                     switch(menuItemStorageCloset){
                         case 1:
@@ -136,92 +135,41 @@ public class Main {
                         case 2:
                             break;
                     }
-                break;
             
                 
             case 2:
                 System.out.println("The cart contains a bunch of dirty rags");
                 System.out.println("1: Take dirty rags");
                 System.out.println("2: Go back to hallway");
+                
                     int menuItemCart = Integer.parseInt(in.nextLine());
                     switch(menuItemCart){
                         case 1:
                             inventory.add("Dirty rags");
                             System.out.println("You added the dirty rags to your inventory, for some reason");
-                break;
-                
+                            break;
+                        case 2:
+                            break;
+                    }
            
             case 3:
-                hallwayCondition = 1;
+                Hallway.Continue(hallwayCondition);
                 break;
                     
             case 4:
-=======
-    int condition2 = 0;
-    
-    while(condition2 != 1){
-    System.out.println("You enter the " + Pharmacy.getRoomTitle());
-    System.out.println(Pharmacy.getRoomDescription());
-    System.out.println("1: Scream for help");
-    System.out.println("2: Look through the cabinets");
-    System.out.println("3: Examine the door");
-    System.out.println("4: View Inventory");
-    
-    Scanner in = new Scanner(System.in);
-    int menuItem = Integer.parseInt(in.nextLine());
-    switch (menuItem){
-        case 1: 
-            System.out.println("You hear your echo... then silence...");
-            break;
-            
-        case 2:
-            System.out.println("There are three cabinets nearby. WHich one do you open?");
-            System.out.println("1: Trash");
-            System.out.println("2: Reciepts");
-            System.out.println("3: Supplies");            
-            int menuItemCabinets = Integer.parseInt(in.nextLine());
-                    switch(menuItemCabinets) {
-                        case 1: 
-                            System.out.println("An employee threw away what seems to be a key card.");
-                            System.out.println("You keep the card.");
-                            inventory.add("Key Card");
-                            break;
-                            
-                        case 2:
-                            System.out.println("Just as you suspected. Reciepts.");
-                            break;
-                            
-                        case 3:
-                            System.out.println("Mops and brooms. Not much else.");
-                            break;
-                    }
-                    break;
-                    
-        case 3:
-            if (inventory.contains("Key Card")){
-                System.out.println("You wave the card you picked up at the door. It opens.");
-                condition2 = 1;
-            }else{
-                System.out.println("There's a handle but the door won't budge.");
-                System.out.println("Maybe there's a key somewhere...");
-            }
-            break;
-            
-        case 4:
->>>>>>> origin/master
                 if(inventory.size() > 0){
-                    Inventory.getList(inventory);    
+                Inventory.getList(inventory);    
                 }
                 else{
                     System.out.println("There is nothing in your inventory");
                 }
-<<<<<<< HEAD
                 break;
         }
-        }
+        
         }
         
-        else{
+        if(hallwayCondition == 1){
+            while(hallwayCondition == 1){
             System.out.println("You continue further down the hallway.  You see a door with a keypad entry, a trashcan, and a large slab of concrete on the ground");
                 System.out.println("Choose a menu item: ");
                 System.out.println("1: Open Door");
@@ -235,8 +183,8 @@ public class Main {
                         case 1:
                             if(inventory.contains("Paper with code(424262)")){
                             System.out.println("The door has opened");
+                            hallwayCondition = 0;
                             condition2 = 1;
-                    
                             }
                             else{
                             System.out.println("The door is locked, it appears to require a secret code");
@@ -250,7 +198,8 @@ public class Main {
                             System.out.println("You added the slab of concrete to your inventory");
                             break;
                         case 4:
-                            hallwayCondition = 0;
+                            condition2 = 0;
+                            Hallway.goBack(hallwayCondition);
                             break;
                         case 5:
                             if(inventory.size() > 0){
@@ -260,22 +209,10 @@ public class Main {
                             System.out.println("There is nothing in your inventory");
                             }
                             break;
-                            }
+                        }
         }
     }
-        
+    }    
     }
-                
-        }
-    
-
-=======
-            break;    
-    }
-    }
-    System.out.println("You leave the Pharmacy.");
-    
-
 }
-}
->>>>>>> origin/master
+    
