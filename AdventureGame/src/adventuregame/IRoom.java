@@ -11,7 +11,7 @@ package adventuregame;
  */
 public interface IRoom {
     
-   public String getRoomDescription();
+    public String getRoomDescription();
 
     public void setRoomDescription(String roomDescription);
 

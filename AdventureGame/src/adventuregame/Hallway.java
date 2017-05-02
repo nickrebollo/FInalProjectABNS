@@ -12,40 +12,63 @@ package adventuregame;
 public class Hallway implements IRoom{
     
     //Sets the room description and title for the rooms
-    private String roomDescription = " ";
-    private String roomTitle = " ";
+    private String roomDescription;
+    private String roomTitle;
     
     //Empty Contructor
     public Hallway(){}
     
     //Constructor with Parameters
-    public Hallway(String roomDescription, String roomTitle){
+    public Hallway(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
     
     //Getters and Setters for the Description and Title
-    @Override
+<<<<<<< HEAD
+    
     public String getRoomDescription() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
-    @Override
+  
     public void setRoomDescription(String roomDescription) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
-    @Override
+   
     public String getRoomTitle() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
-    @Override
+    
     public void setRoomTitle(String roomTitle) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
+=======
+    @Override
+    public String getRoomDescription() 
+    { return roomDescription; }
+
+    @Override
+    public void setRoomDescription(String roomDescription) 
+    { this.roomDescription = roomDescription; }
+
+    @Override
+    public String getRoomTitle() 
+    { return roomTitle; }
+
+    @Override
+    public void setRoomTitle(String roomTitle) 
+    { this.roomTitle = roomTitle; }
+>>>>>>> origin/master
     
     //Methods
-    
+    public void Continue(Hallway h1){
+        
+    }
+    public void goBack(Hallway h1){
+        
+    }
     
 }

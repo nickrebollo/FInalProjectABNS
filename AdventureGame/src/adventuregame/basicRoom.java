@@ -12,14 +12,14 @@ package adventuregame;
 public class basicRoom implements IRoom {
     
     //Sets the room description and title for the rooms
-    private String roomDescription = " ";
-    private String roomTitle = " ";
+    private String roomDescription;
+    private String roomTitle;
     
     //Empty Contructor
     public basicRoom(){}
     
     //Constructor with Parameters
-    public basicRoom(String roomDescription, String roomTitle){
+    public basicRoom(String roomTitle, String roomDescription){
         setRoomDescription(roomDescription);
         setRoomTitle(roomTitle);
     }
