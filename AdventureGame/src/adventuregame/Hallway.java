@@ -25,27 +25,7 @@ public class Hallway implements IRoom{
     }
     
     //Getters and Setters for the Description and Title
-<<<<<<< HEAD
-    
-    public String getRoomDescription() {
-        
-    }
 
-  
-    public void setRoomDescription(String roomDescription) {
-        
-    }
-
-   
-    public String getRoomTitle() {
-        
-    }
-
-    
-    public void setRoomTitle(String roomTitle) {
-        
-    }
-=======
     @Override
     public String getRoomDescription() 
     { return roomDescription; }
@@ -61,14 +41,13 @@ public class Hallway implements IRoom{
     @Override
     public void setRoomTitle(String roomTitle) 
     { this.roomTitle = roomTitle; }
->>>>>>> origin/master
     
     //Methods
-    public void Continue(Hallway h1){
-        
+    public void Continue(int condition){
+        condition++;
     }
-    public void goBack(Hallway h1){
-        
+    public void goBack(int condition){
+        condition --;
     }
     
 }
