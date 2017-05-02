@@ -24,7 +24,7 @@ public class Main {
         Room ThirdRoom = new Room("Third Room", "This is the description of the first room. Try to get out");
         
         ArrayList<String> inventory = new ArrayList<>();
-        
+        Stack lifo = new Stack();
         int condition1 = 0;
         
         while(condition1 != 1) {
