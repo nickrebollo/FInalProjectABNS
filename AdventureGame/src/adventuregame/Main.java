@@ -28,6 +28,9 @@ public class Main {
         
         //Initialize arraylist for Inventory
         ArrayList<String> inventory = new ArrayList<>();
+<<<<<<< HEAD
+        Stack lifo = new Stack();
+=======
         
         //Initialize Scanner
         Scanner in = new Scanner(System.in);
@@ -35,6 +38,7 @@ public class Main {
         //Run Program
         
         //First Room
+>>>>>>> origin/master
         int condition1 = 0;
         
         while(condition1 != 1) {
